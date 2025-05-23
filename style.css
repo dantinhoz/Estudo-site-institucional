@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    background-color: #F1F8E9;
+}
+
+hr {
+    color:rgba(51, 51, 51, 0.5);
+    max-width: 726px;
+    /*COMO QUE BOTA NO CENTRO DA TELA?*/
+}
+
+/*HEADER*/
+header {
+    background-color: #2E7D32;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 247px;
+    height: 95px;
+    object-fit: cover;
+    margin-left: 2.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+    color: #F1F8E9;
+    cursor: pointer;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/*SEÇÃO INÍCIO*/
+.inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    /*COMO QUE CENTRALIZA OS TEXTOS?*/
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1042px;
+    color: #333333;
+}
+
+.subtitulo {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 837px;
+    color: #333333;
+}
+
+.fale {
+    background-color: #2E7D32;
+    color: #F1F8E9;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 25px;
+    margin-top: 1rem;
+}
+
+/*SEÇÃO SOBRE*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.para-sobre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1003px;
+}
+
+/*SEÇÃO DE SERVIÇOS*/
+.icon {
+    width: 360px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.serv1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1017px;
+}
+
+.serv2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1017px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #2E7D32;
+}
+
+/*CONTATOS*/
+fieldset {
+    background-color: #A5D6A7;
+    border-radius: 12px;
+    border: none;
+    max-width: 791px;
+    height: 464px;
+}
+
+textarea {
+    background-color: #F1F8E9;
+    width: 726;
+    height: 142;
+    border-radius: 12px;
+    border: none;
+}
+
+
+.redes {
+    background-color: transparent;
+    border: none;
+}
+
+.redes-icon {
+    width: 39px;
+}
+
+/*FOOTER*/
