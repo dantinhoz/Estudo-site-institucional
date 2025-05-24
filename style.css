@@ -16,9 +16,10 @@ html {
 }
 
 hr {
-    color:rgba(51, 51, 51, 0.5);
+    color: rgba(51, 51, 51, 0.5);
     max-width: 726px;
-    margin: 2rem 0 2rem 600px; /*fiz uma gambiarra provisória pra centralizar, coloquei margin na esquerda*/
+    margin: auto;
+    /*fiz uma gambiarra provisória pra centralizar, coloquei margin na esquerda*/
     border: 1px solid;
 }
 
@@ -43,16 +44,16 @@ nav {
     margin-right: 3rem;
 }
 
-.navegacao > ul > li > a {
+.navegacao>ul>li>a {
     text-decoration: none;
     color: #F1F8E9;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
-    
+
 }
 
-.navegacao > ul > li > a:hover {
+.navegacao>ul>li>a:hover {
     text-decoration: underline;
     transition: 0.3ms;
 }
@@ -122,6 +123,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 64px;
+    margin-top: 2rem;
 }
 
 p {
@@ -135,6 +137,7 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 1003px;
+    margin-bottom: 1rem;
 }
 
 /*SEÇÃO DE SERVIÇOS*/
@@ -161,6 +164,7 @@ p {
     display: flex;
     flex-direction: row;
     max-width: 1017px;
+    margin-bottom: 2rem;
 }
 
 h4 {
@@ -168,6 +172,7 @@ h4 {
     font-weight: 700;
     font-size: 40px;
     color: #2E7D32;
+
 }
 
 .descricao {
@@ -181,49 +186,98 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px 0;
 }
 
-.contato > h4 {
+.contato>h4 {
     align-self: flex-start;
-    margin-left: 550px;
+    margin-left: 620px;
 }
 
+/*CAIXAS DE TEXTO E FIELDSET*/
 fieldset {
     background-color: #A5D6A7;
     border-radius: 12px;
     border: none;
-    max-width: 791px;
-    height: 464px;
+    width: 630px;
+    height: 440px;
+    margin: 0.5rem;
 }
 
 textarea {
     background-color: #F1F8E9;
-    width: 726px;
+    width: 674px;
     height: 142px;
     border-radius: 12px;
     border: none;
+    margin: 0 30px 15px 30px;
+    padding: 20px 490px 20px 30px;
+    resize: none;
 }
 
-.redes {
-    background-color: transparent;
-    border: none;
-}
-
-.redes-icon {
-    width: 39px;
+textarea::placeholder {
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.51);
 }
 
 input {
-    padding: 34.5px 363px;
+    padding: 20px 490px 20px 30px;
     border-radius: 12px;
     border: none;
     background-color: #F1F8E9;
+}
+
+input[type=text] {
+    margin: 40px 30px 25px 30px;
+}
+
+input[type=email] {
+    margin: 0 30px 25px 30px;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder {
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.51);
+}
+
+/*BOTOES EMBAIXO DAS CAIXAS*/
+.redes-icon {
+    width: 35px;
+}
+
+.div-botoes-redes {
+    margin: 10px 30px;
 }
 
 .botoes-fim {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.redes, .redes2, .redes3 {
+    background-color: transparent;
+    border: none;
+}
+
+.redes2, .redes3 {
+    margin-left: 15px;
+}
+
+.botao-enviar {
+    background-color: #2E7D32;
+    color: #F1F8E9;
+    border-radius: 12px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 35px;
+    margin: 0 30px 10px 0;
 }
 
 /*FOOTER*/
@@ -235,11 +289,12 @@ footer {
     padding: 3rem;
 }
 
-.links > p, .direitos > p {
+.links>p,
+.direitos>p {
     font-size: 24px;
     font-weight: 400;
     color: #F1F8E9;
-    
+
 }
 
 .links {
